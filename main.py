@@ -15,6 +15,5 @@ if __name__ == '__main__':
     tmp_wav_name = '16000.wav'
     tmp_raw_name = '16000.raw'
 
-    slack_webhook_url = config.get('slack', 'webhook_url')
     transcribe_streaming_ja(convert_audio(args.stream, tmp_wav_name, tmp_raw_name))
     remove_tmp_file(tmp_wav_name, tmp_raw_name)
