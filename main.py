@@ -2,13 +2,9 @@
 
 import argparse
 import io
-import ConfigParser
 from transcribe_streaming_ja import transcribe_streaming_ja
 from convert_audio import convert_audio
 from convert_audio import remove_tmp_file
-
-config = ConfigParser.ConfigParser()
-config.read('../setting.ini')
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(
